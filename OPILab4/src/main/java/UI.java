@@ -28,12 +28,12 @@ public class UI extends Application{
 
         Button btnUpdate = Utils.createButton("Update",700,550);
         btnUpdate.setOnAction(event -> {
-            try {
+          try {
                 int selectedIndex = table.getSelectionModel().getSelectedIndex();
                 if(selectedIndex != 0){crud.updateReport(stage,list,selectedIndex);}
-            }catch (ArrayIndexOutOfBoundsException e){
+            }catch (ArrayIndexOutOfBoundsException e){}
 
-            }
+
         });
 
 
